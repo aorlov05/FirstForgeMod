@@ -1,6 +1,7 @@
 package io.github.aorlov05.firstforgemod;
 
 import com.mojang.logging.LogUtils;
+import io.github.aorlov05.firstforgemod.block.ModBlocks;
 import io.github.aorlov05.firstforgemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -28,6 +29,7 @@ public class FirstForgeMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -43,11 +45,13 @@ public class FirstForgeMod {
 
     }
 
-    // Adds the supplied items to the ingredients tab in the creative mod menu
+    // Adds the supplied items and blocks to the ingredients tab in the creative mod menu
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_ADAMITE);
             event.accept(ModItems.ADAMITE);
+        } else if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ADAMITE_BLOCK);
         }
     }
 

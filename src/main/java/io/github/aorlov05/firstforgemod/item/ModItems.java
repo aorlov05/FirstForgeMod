@@ -23,4 +23,8 @@ public class ModItems {
         ITEMS.register(modEventBus);
     }
 
+    public static DeferredRegister<Item> getItems() {
+        return ITEMS;
+    }
+
 }
