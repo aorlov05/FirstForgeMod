@@ -3,5 +3,8 @@
   "item.firstforgemod.raw_adamite": "Raw Adamite",
 
   "block.firstforgemod.adamite_block": "Adamite Block",
-  "block.firstforgemod.raw_adamite_block": "Raw Adamite Block"
+  "block.firstforgemod.raw_adamite_block": "Raw Adamite Block",
+
+  "creativemodetab.mod_items_tab": "Mod Items Tab",
+  "creativemodetab.mod_blocks_tab": "Mod Blocks Tab"
 }

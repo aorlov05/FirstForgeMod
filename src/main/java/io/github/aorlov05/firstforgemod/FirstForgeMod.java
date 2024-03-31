@@ -2,6 +2,7 @@ package io.github.aorlov05.firstforgemod;
 
 import com.mojang.logging.LogUtils;
 import io.github.aorlov05.firstforgemod.block.ModBlocks;
+import io.github.aorlov05.firstforgemod.item.ModCreativeModeTabs;
 import io.github.aorlov05.firstforgemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -28,8 +29,10 @@ public class FirstForgeMod {
     public FirstForgeMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // Register Deferred Registers to the mod event bus so game objects get registered
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
