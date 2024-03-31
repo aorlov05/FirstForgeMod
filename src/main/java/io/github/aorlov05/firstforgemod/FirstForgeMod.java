@@ -1,6 +1,9 @@
 package io.github.aorlov05.firstforgemod;
 
 import com.mojang.logging.LogUtils;
+import io.github.aorlov05.firstforgemod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,6 +27,8 @@ public class FirstForgeMod {
     public FirstForgeMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -38,8 +43,12 @@ public class FirstForgeMod {
 
     }
 
+    // Adds the supplied items to the ingredients tab in the creative mod menu
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_ADAMITE);
+            event.accept(ModItems.ADAMITE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
