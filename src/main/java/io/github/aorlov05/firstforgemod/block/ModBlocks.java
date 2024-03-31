@@ -21,6 +21,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ADAMITE_BLOCK = registerBlock("adamite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> RAW_ADAMITE_BLOCK = registerBlock("raw_adamite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     // Registers a block and its corresponding block item
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

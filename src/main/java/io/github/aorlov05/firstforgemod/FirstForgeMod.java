@@ -52,6 +52,7 @@ public class FirstForgeMod {
             event.accept(ModItems.ADAMITE);
         } else if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ADAMITE_BLOCK);
+            event.accept(ModBlocks.RAW_ADAMITE_BLOCK);
         }
     }
 
