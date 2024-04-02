@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "adamite",
+  "ingredient": {
+    "item": "firstforgemod:raw_adamite"
+  },
+  "result": "firstforgemod:adamite"
+}
