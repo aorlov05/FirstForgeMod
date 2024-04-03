@@ -33,6 +33,10 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ADAMITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_ADAMITE_BLOCK.get());
+                        output.accept(ModBlocks.ADAMITE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_ADAMITE_ORE.get());
+                        output.accept(ModBlocks.END_STONE_ADAMITE_ORE.get());
+                        output.accept(ModBlocks.NETHER_ADAMITE_ORE.get());
                     })
                     .build());
 

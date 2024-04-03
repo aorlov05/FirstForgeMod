@@ -6,6 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,6 +24,17 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> RAW_ADAMITE_BLOCK = registerBlock("raw_adamite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+
+    // TODO Require .requiresCorrectToolForDrops() when setting up loot tables
+    public static final RegistryObject<Block> ADAMITE_ORE = registerBlock("adamite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_ADAMITE_ORE = registerBlock("deepslate_adamite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final RegistryObject<Block> END_STONE_ADAMITE_ORE = registerBlock("end_stone_adamite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE)));
+    public static final RegistryObject<Block> NETHER_ADAMITE_ORE = registerBlock("nether_adamite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .sound(SoundType.NETHER_GOLD_ORE)));
 
     // Registers a block and its corresponding block item
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
