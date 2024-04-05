@@ -1,6 +1,7 @@
 package io.github.aorlov05.firstforgemod.item;
 
 import io.github.aorlov05.firstforgemod.FirstForgeMod;
+import io.github.aorlov05.firstforgemod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> RAW_ADAMITE = ITEMS.register("raw_adamite",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(256)));
 
     // Registers the items during RegisterEvent
     public static void register(IEventBus modEventBus) {
