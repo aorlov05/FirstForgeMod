@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "firstforgemod:adamite_block",
+    "firstforgemod:raw_adamite_block",
+    "firstforgemod:adamite_ore"
+  ]
+}

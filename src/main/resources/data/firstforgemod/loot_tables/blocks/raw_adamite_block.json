@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "firstforgemod:raw_adamite_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "firstforgemod:blocks/raw_adamite_block"
+}

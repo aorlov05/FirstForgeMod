@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "firstforgemod:adamite_block",
+    "firstforgemod:raw_adamite_block",
+    "firstforgemod:adamite_ore",
+    "firstforgemod:deepslate_adamite_ore",
+    "firstforgemod:end_stone_adamite_ore",
+    "firstforgemod:nether_adamite_ore"
+  ]
+}
