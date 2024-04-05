@@ -2,6 +2,9 @@
   "item.firstforgemod.adamite": "Adamite",
   "item.firstforgemod.raw_adamite": "Raw Adamite",
 
+  "item.firstforgemod.teleport_stick": "Teleport Stick",
+  "tooltip.firstforgemod.teleport_stick.tooltip.shift": "Has a reach of 15 blocks",
+  "tooltip.firstforgemod.teleport_stick.tooltip": "Teleports you where you look",
   "item.firstforgemod.metal_detector": "Metal Detector",
   "item.firstforgemod.metal_detector.no_ore": "No Adamite Ore found!",
 

@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ADAMITE.get());
                         output.accept(ModItems.RAW_ADAMITE.get());
                         output.accept(ModItems.METAL_DETECTOR.get());
+                        output.accept(ModItems.TELEPORT_STICK.get());
                     })
                     .build());
 
