@@ -25,6 +25,9 @@ public class ModItems {
     public static final RegistryObject<Item> TELEPORT_STICK = ITEMS.register("teleport_stick",
             () -> new TeleportStickItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> TURNIP = ITEMS.register("turnip",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TURNIP)));
+
     // Registers the items during RegisterEvent
     public static void register(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
