@@ -39,6 +39,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_ADAMITE_ORE.get());
                         output.accept(ModBlocks.END_STONE_ADAMITE_ORE.get());
                         output.accept(ModBlocks.NETHER_ADAMITE_ORE.get());
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
 

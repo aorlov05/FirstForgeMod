@@ -1,6 +1,7 @@
 package io.github.aorlov05.firstforgemod.block;
 
 import io.github.aorlov05.firstforgemod.FirstForgeMod;
+import io.github.aorlov05.firstforgemod.block.custom.SoundBlock;
 import io.github.aorlov05.firstforgemod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -41,6 +42,9 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_GOLD_ORE).requiresCorrectToolForDrops(),
                     UniformInt.of(5, 8)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
 
     // Registers a block and its corresponding block item
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
