@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModItems.TELEPORT_STICK.get());
                         output.accept(ModItems.TURNIP.get());
+                        output.accept(ModItems.PEAT_BRICK.get());
                     })
                     .build());
 

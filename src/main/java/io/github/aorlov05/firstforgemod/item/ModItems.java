@@ -2,6 +2,7 @@ package io.github.aorlov05.firstforgemod.item;
 
 import io.github.aorlov05.firstforgemod.FirstForgeMod;
 import io.github.aorlov05.firstforgemod.item.custom.MetalDetectorItem;
+import io.github.aorlov05.firstforgemod.item.custom.PeatBrickItem;
 import io.github.aorlov05.firstforgemod.item.custom.TeleportStickItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +28,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> TURNIP = ITEMS.register("turnip",
             () -> new Item(new Item.Properties().food(ModFoodProperties.TURNIP)));
+    public static final RegistryObject<Item> PEAT_BRICK = ITEMS.register("peat_brick",
+            () -> new PeatBrickItem(new Item.Properties(), 200));
 
     // Registers the items during RegisterEvent
     public static void register(IEventBus modEventBus) {
